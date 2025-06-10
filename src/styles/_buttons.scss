@@ -1,0 +1,43 @@
+@use 'variables' as var;
+
+button:focus-visible {
+  outline: -webkit-focus-ring-color auto 1px;
+  outline-offset: 2px;
+}
+
+@each $btn, $color in var.$btn-colors {
+  .btn-#{$btn} {
+    background-color: $color;
+    color: var.$white;
+    padding: var.$xs var.$md;
+    border-radius: var.$xs;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+    i {
+      margin-block: 0;
+      font-size: 1rem;
+      color: var.$white;
+      margin-left: var.$xxs;
+      transition: all 0.2s ease-in-out;
+    }
+    &:hover {
+      background-color: var.$quaternary;
+      color: $color;
+      i {
+        color: $color;
+      }
+    }
+  }
+}
+
+.btn-play {
+  padding: var.$xs;
+  border-radius: 100%;
+  width: var.$xxl;
+  height: var.$xxl;
+  i {
+    font-size: 24px;
+  }
+}
