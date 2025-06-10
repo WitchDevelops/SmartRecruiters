@@ -1,3 +1,4 @@
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import './styles/main.scss';
 import typescriptLogo from './typescript.svg';
 import viteLogo from '/vite.svg';
@@ -29,6 +30,21 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <a href="#">Link</a>
     <button>Button</button>
     <button class="btn-primary">primary</button>
+    <i class="fas fa-heart"></i>
+    <div>
+      <button class="btn-primary">Default</button>
+      <button class="btn-secondary">Default</button>
+      <button class="btn-tertiary">Default</button>
+    </div>
+    <div>
+      <button class="btn-primary">Icon <i class="fa-solid fa-star"></i></button>
+      <button class="btn-secondary">Icon <i class="fa-solid fa-star"></i></button>
+      <button class="btn-tertiary">Icon <i class="fa-solid fa-star"></i></button>
+    </div>
+    <div>
+      <button class="btn-primary btn-play"><i class="fa-solid fa-play"></i></button>
+      <button class="btn-secondary btn-play"><i class="fa-solid fa-play"></i></button>
+    </div>
   </div>
 `;
 
