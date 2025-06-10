@@ -76,3 +76,11 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: unset;
+  outline: none;
+  padding: 0;
+}

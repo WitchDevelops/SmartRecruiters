@@ -1,9 +1,9 @@
 @use 'reset';
 @use 'variables' as var;
+@use 'typography';
 
 body {
   font-family: var.$font-stack;
-  text-align: center;
   margin: 0;
   padding: 0;
 }
