@@ -1,13 +1,13 @@
-import images from '../utils/imageData';
+import { images } from '../utils/imageData';
 
-const renderGallery = () => {
+export const renderGallery = () => {
   const gallery = document.createElement('div');
   gallery.className = 'gallery';
 
   gallery.innerHTML = images
     .map(
       (image) => `
-        <div class="gallery-item">
+        <div class="gallery__item">
           <img src="${image.src}" alt="${image.alt}" title="${image.alt}" />
         </div>
       `
@@ -16,5 +16,3 @@ const renderGallery = () => {
 
   return gallery;
 };
-
-export default renderGallery;

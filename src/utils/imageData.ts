@@ -2,10 +2,9 @@ interface Image {
   id: number;
   src: string;
   alt: string;
-  // Add any other metadata you want to include
 }
 
-const images: Image[] = [
+export const images: Image[] = [
   {
     id: 1,
     src: new URL('../assets/images/media-1.png', import.meta.url).href,
@@ -32,5 +31,3 @@ const images: Image[] = [
     alt: 'Description of Image 5',
   },
 ];
-
-export default images;
