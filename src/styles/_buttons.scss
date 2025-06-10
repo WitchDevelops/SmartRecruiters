@@ -1,0 +1,15 @@
+@use 'variables' as var;
+
+@each $btn, $color in var.$btn-colors {
+  .btn-#{$btn} {
+    background-color: $color;
+    color: var.$white;
+    padding: var.$xs var.$md;
+    border-radius: var.$xs;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      background-color: var.$quaternary;
+      color: var.$primary;
+    }
+  }
+}

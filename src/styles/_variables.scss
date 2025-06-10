@@ -36,3 +36,18 @@ $black: #000000;
 $white: #ffffff;
 $content: #222222;
 $danger: #9f0000;
+
+// Buttons
+$btn-colors: (
+  primary: $primary,
+  secondary: $secondary,
+  tertiary: $tertiary,
+);
+
+// Spacing
+$xs: 8px;
+$sm: 16px;
+$md: 24px;
+$lg: 32px;
+$xl: 40px;
+$xxl: 48px;

@@ -1,6 +1,7 @@
 @use 'reset';
 @use 'variables' as var;
 @use 'typography';
+@use 'buttons';
 
 body {
   font-family: var.$font-stack;

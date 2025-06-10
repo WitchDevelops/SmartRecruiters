@@ -28,6 +28,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <p class="text-small">Small - Lorem <em>ipsum</em> dolor sit amet, <strong>consectetur</strong> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     <a href="#">Link</a>
     <button>Button</button>
+    <button class="btn-primary">primary</button>
   </div>
 `;
 
