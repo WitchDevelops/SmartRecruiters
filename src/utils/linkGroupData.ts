@@ -1,6 +1,6 @@
 interface Link {
   text: string;
-  link: string;
+  url: string;
   icon?: string;
 }
 interface LinkGroupData {
@@ -11,7 +11,7 @@ interface LinkGroupData {
 export const linkGroupData: LinkGroupData = {
   title: 'Links',
   links: [
-    { text: 'Link one', link: '#', icon: '<i class="fa-solid fa-star"></i>' },
-    { text: 'Link two', link: '#' },
+    { text: 'Link one', url: '#', icon: '<i class="fa-solid fa-star"></i>' },
+    { text: 'Link two', url: '#' },
   ],
 };

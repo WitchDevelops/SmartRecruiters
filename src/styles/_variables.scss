@@ -52,3 +52,15 @@ $md: 24px;
 $lg: 32px;
 $xl: 40px;
 $xxl: 48px;
+
+$base: 15px;
+$main: calc($base * 2);
+$margin: calc($base * 1.25);
+
+// breakpoints
+
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;

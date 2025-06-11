@@ -1,12 +1,18 @@
 @use 'variables' as var;
 
-button:focus-visible {
+a.btn {
+  text-decoration: none;
+}
+
+a.btn:focus-visible,
+.btn :focus-visible {
   outline: -webkit-focus-ring-color auto 1px;
   outline-offset: 2px;
 }
 
 @each $btn, $color in var.$btn-colors {
   .btn-#{$btn} {
+    cursor: pointer;
     background-color: $color;
     color: var.$white;
     padding: var.$xs var.$md;
@@ -14,6 +20,7 @@ button:focus-visible {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: var.$fw-semibold;
     transition: all 0.2s ease-in-out;
     i {
       margin-block: 0;

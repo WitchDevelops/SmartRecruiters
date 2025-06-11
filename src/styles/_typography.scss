@@ -40,7 +40,7 @@ strong {
   font-size: inherit;
 }
 
-a {
+a:not(.btn) {
   font-family: var.$font-stack;
   font-size: 1rem;
   color: var.$secondary;
