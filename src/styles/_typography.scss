@@ -40,7 +40,7 @@ strong {
   font-size: inherit;
 }
 
-a {
+a:not(.btn) {
   font-family: var.$font-stack;
   font-size: 1rem;
   color: var.$secondary;
@@ -52,6 +52,11 @@ a {
   text-underline-offset: 0%;
   text-decoration-thickness: 0%;
   text-decoration-style: solid;
+  &:focus-visible {
+    outline: var.$tertiary solid 2px;
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
 }
 
 button {
@@ -65,6 +70,6 @@ button {
   vertical-align: middle;
 }
 
-.text-small {
+.text--small {
   font-size: 0.833rem;
 }

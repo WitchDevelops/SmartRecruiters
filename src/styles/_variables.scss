@@ -42,6 +42,7 @@ $btn-colors: (
   primary: $primary,
   secondary: $secondary,
   tertiary: $tertiary,
+  danger: $danger,
 );
 
 // Spacing
@@ -52,3 +53,20 @@ $md: 24px;
 $lg: 32px;
 $xl: 40px;
 $xxl: 48px;
+
+$base: 15px;
+$main: calc($base * 2);
+$margin: calc($base * 1.25);
+$gallery-gap: calc($base * 2);
+$gallery-radius: calc($base * 2);
+$modal-radius: 20px;
+$modal-padding: calc($base * 2);
+
+// breakpoints
+
+$breakpoint-xs: 375px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
