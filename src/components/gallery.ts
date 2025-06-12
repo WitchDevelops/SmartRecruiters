@@ -2,7 +2,7 @@ import { images } from '../utils/imageData';
 import { createDialog, createVideoIframe, convertToEmbedUrl } from './modal';
 
 export const renderGallery = () => {
-  const gallery = document.createElement('div');
+  const gallery = document.createElement('section');
   gallery.className = 'gallery';
 
   gallery.innerHTML = images.map(renderGalleryItem).join('');
