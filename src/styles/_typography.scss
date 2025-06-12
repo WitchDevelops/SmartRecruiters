@@ -52,6 +52,11 @@ a:not(.btn) {
   text-underline-offset: 0%;
   text-decoration-thickness: 0%;
   text-decoration-style: solid;
+  &:focus-visible {
+    outline: var.$tertiary solid 2px;
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
 }
 
 button {
