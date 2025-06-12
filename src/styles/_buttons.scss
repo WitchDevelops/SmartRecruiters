@@ -58,6 +58,9 @@ a.btn:focus-visible,
   border-radius: 100%;
   i {
     color: var.$white;
-    font-size: 18px;
+    font-size: 24px;
+  }
+  &:hover {
+    outline: 2px solid var.$danger;
   }
 }
