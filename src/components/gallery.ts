@@ -14,17 +14,21 @@ function renderGalleryItem(image: (typeof images)[number]): string {
 
   if (type === 'video') {
     return `
-      <div class="gallery__item gallery__item--video-container">
-        <img src="${src}" alt="${alt}" title="${alt}" />
-        <button class="btn btn-primary btn-play" data-video-url="${videoUrl}">
-          <i class="fa-solid fa-play"></i>
+      <div class="gallery__item ">
+        <div class="gallery__item--video-container">
+          <img class="gallery__item--video-img" src="${src}" alt="${alt}" title="${alt}" />
+          <button class="gallery__item--video-btn btn btn-primary btn-play" data-video-url="${videoUrl}">
+            <i class="fa-solid fa-play"></i>
         </button>
+        </div>
       </div>`;
   }
 
   return `
-    <div class="gallery__item gallery__item--img-container">
-      <img src="${src}" alt="${alt}" title="${alt}" />
+    <div class="gallery__item ">
+      <div class="gallery__item--img-container">
+        <img class="gallery__item--img-img" src="${src}" alt="${alt}" title="${alt}" />
+      </div>
     </div>`;
 }
 
