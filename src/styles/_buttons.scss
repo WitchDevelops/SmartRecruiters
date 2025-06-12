@@ -20,13 +20,13 @@ a.btn:focus-visible,
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: var.$xs;
     font-weight: var.$fw-semibold;
     transition: all 0.2s ease-in-out;
     i {
       margin-block: 0;
       font-size: 1rem;
       color: var.$white;
-      margin-left: var.$xs;
       transition: all 0.2s ease-in-out;
     }
     &:hover {
