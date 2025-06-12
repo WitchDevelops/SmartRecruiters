@@ -19,3 +19,8 @@ main {
   max-width: 1260px;
   margin: auto;
 }
+
+body.no-scroll {
+  overflow: hidden;
+}
+
