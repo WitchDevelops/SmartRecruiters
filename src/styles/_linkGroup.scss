@@ -3,8 +3,12 @@
 .link-group {
   &__links {
     display: flex;
+    flex-direction: column;
     gap: var.$base;
     margin-block: var.$margin;
+    @media (min-width: var.$breakpoint-xs) {
+      flex-direction: row;
+    }
   }
   @media (min-width: var.$breakpoint-md) {
     text-align: center;

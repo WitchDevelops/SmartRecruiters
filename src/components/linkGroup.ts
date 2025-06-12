@@ -10,8 +10,8 @@ export const linkGroup = () => {
       ${linkGroupData.links
         .map(
           (link) => `
-        <a class="btn ${link.icon ? 'btn-primary' : 'btn-secondary'}" href="${link.url}" target="_blank">
-          ${link.text} ${link.icon || ''}
+        <a class="btn btn-${link.buttonType}" href="${link.url}" target="${link.target}">
+          ${link.text} ${link.icon ? link.icon : ''} 
         </a>`
         )
         .join('')}
