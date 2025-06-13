@@ -2,7 +2,7 @@ import { images } from '../utils/imageData';
 import { createDialog, createVideoIframe, convertToEmbedUrl } from './modal';
 
 export const renderGallery = () => {
-  const gallery = document.createElement('div');
+  const gallery = document.createElement('section');
   gallery.className = 'gallery';
 
   gallery.innerHTML = images.map(renderGalleryItem).join('');
@@ -18,8 +18,8 @@ function renderGalleryItem(image: (typeof images)[number]): string {
       <div class="gallery__item ">
         <div class="gallery__item--video-container">
           <img class="gallery__item--video-img" src="${src}" alt="${alt}" title="${alt}" />
-          <button class="gallery__item--video-btn btn btn-primary btn-play" data-video-url="${videoUrl}">
-            <i class="fa-solid fa-play"></i>
+          <button class="gallery__item--video-btn btn btn-primary btn-play" aria-label="Play video: ${alt}" data-video-url="${videoUrl}">
+            <i class="fa-solid fa-play" aria-hidden="true"></i>
         </button>
         </div>
       </div>`;

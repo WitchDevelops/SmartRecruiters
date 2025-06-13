@@ -1,7 +1,7 @@
 import { linkGroupData } from '../utils/linkGroupData';
 
 export const linkGroup = () => {
-  const linkGroup = document.createElement('div');
+  const linkGroup = document.createElement('section');
   linkGroup.className = 'link-group';
 
   linkGroup.innerHTML = `
